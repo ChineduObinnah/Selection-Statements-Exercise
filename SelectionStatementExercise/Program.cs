@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
             var r = new Random();
-            var favNumber = 7;
+            var favNumber = r.Next(1,10);
             Console.WriteLine("Try to guess my favorite number");
             var userInput = int.Parse(Console.ReadLine());
 
@@ -15,7 +15,7 @@
             }
             else if (userInput == favNumber)
             {
-                Console.WriteLine("Nevermind");
+                Console.WriteLine("Correct!");
             }
             else
             {
